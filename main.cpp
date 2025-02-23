@@ -24,10 +24,10 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
     //==============================
 
     // クロス積確認用
-    /*Vector3 v1 = { 1.2f, -3.9f, 2.5f };
+    Vector3 v1 = { 1.2f, -3.9f, 2.5f };
     Vector3 v2 = { 2.8f, 0.4f, -1.3f };
 
-    Vector3 cross = Cross(v1, v2);*/
+    Vector3 printCross = Cross(v1, v2);
 
     Vector3 rotate = { 0.0f, 0.0f, 0.0f };
     Vector3 translate = { 0.0f, 0.0f, 5.0f };
@@ -99,7 +99,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
         ///
 
         // クロス積確認用
-        /* VectorScreenPrintf(0, 0, cross);*/
+         VectorScreenPrintf(0, 0, printCross);
 
         // 背面カリング
         Vector3 vec1 = { screenVertices[1].x - screenVertices[0].x,
